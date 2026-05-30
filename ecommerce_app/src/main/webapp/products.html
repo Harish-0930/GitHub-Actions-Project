@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopZone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">🛒 Shop<span>Zone</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="cart.html">
+                <button class="cart-btn">🛒 Cart <span class="cart-count">0</span></button>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== Page Header ===== -->
+<div class="page-header">
+    <h1>Our Products</h1>
+    <p>Browse our complete collection of premium electronics</p>
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> &rsaquo; <span>Products</span>
+    </div>
+</div>
+
+<!-- ===== Products Layout ===== -->
+<div class="products-page">
+    <div class="products-layout">
+
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>Categories</h3>
+                <div class="filter-option">
+                    <input type="checkbox" id="cat-all" checked>
+                    <label for="cat-all">All Products (8)</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="cat-laptop">
+                    <label for="cat-laptop">Laptops (1)</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="cat-phone">
+                    <label for="cat-phone">Phones (1)</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="cat-audio">
+                    <label for="cat-audio">Audio (1)</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="cat-monitor">
+                    <label for="cat-monitor">Monitors (1)</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="cat-acc">
+                    <label for="cat-acc">Accessories (3)</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="cat-cam">
+                    <label for="cat-cam">Cameras (1)</label>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Price Range</h3>
+                <input type="range" class="price-range" min="0" max="1500" value="1500"
+                       oninput="document.getElementById('price-val').textContent = '$0 - $' + this.value">
+                <div class="price-display">
+                    <span>$0</span>
+                    <span id="price-val">$1500</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Rating</h3>
+                <div class="filter-option">
+                    <input type="checkbox" id="r4">
+                    <label for="r4">⭐⭐⭐⭐ &amp; up</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="r3">
+                    <label for="r3">⭐⭐⭐ &amp; up</label>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Availability</h3>
+                <div class="filter-option">
+                    <input type="checkbox" id="in-stock" checked>
+                    <label for="in-stock">In Stock</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="on-sale">
+                    <label for="on-sale">On Sale</label>
+                </div>
+            </div>
+
+            <div style="background:#EFF6FF; border:1px solid #BFDBFE; border-radius:8px; padding:1rem; font-size:0.85rem; color:#1E40AF;">
+                <strong>💡 Coupon Tip:</strong><br>
+                Use codes at checkout:<br>
+                <strong>SAVE10</strong> — 10% off<br>
+                <strong>SAVE20</strong> — 20% off<br>
+                <strong>WELCOME5</strong> — 5% off<br>
+                <strong>SUMMER15</strong> — 15% off
+            </div>
+        </aside>
+
+        <!-- Products Main Area -->
+        <div class="products-main">
+            <div class="products-toolbar">
+                <span class="products-count">Showing <strong>8</strong> products</span>
+                <select class="sort-select">
+                    <option>Sort by: Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Rating: High to Low</option>
+                    <option>Newest First</option>
+                </select>
+            </div>
+            <div class="products-grid" id="products-grid"></div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <div class="logo">🛒 Shop<span>Zone</span></div>
+            <p>Your trusted destination for premium electronics at competitive prices.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="products.html">All Products</a>
+            <a href="products.html">Laptops</a>
+            <a href="products.html">Phones</a>
+            <a href="products.html">Accessories</a>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Returns</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 ShopZone. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

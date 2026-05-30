@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone - Your One-Stop Electronics Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">🛒 Shop<span>Zone</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="cart.html">
+                <button class="cart-btn">
+                    🛒 Cart <span class="cart-count">0</span>
+                </button>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">🔥 New Arrivals Every Week</div>
+        <h1>The Best <span>Electronics</span><br>At Your Doorstep</h1>
+        <p>Discover top-quality laptops, phones, accessories and more. Fast shipping, easy returns, and unbeatable prices.</p>
+        <div class="hero-buttons">
+            <a href="products.html"><button class="btn-primary">🛍️ Shop Now</button></a>
+            <a href="about.html"><button class="btn-outline">Learn More →</button></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Stats Bar ===== -->
+<div class="stats-bar">
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="stat-value">10K+</div>
+            <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">500+</div>
+            <div class="stat-label">Products</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">4.8★</div>
+            <div class="stat-label">Average Rating</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">24/7</div>
+            <div class="stat-label">Customer Support</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">Free</div>
+            <div class="stat-label">Shipping over $500</div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Categories ===== -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Browse By</div>
+            <h2>Shop by Category</h2>
+            <p>Find exactly what you're looking for in our curated collections</p>
+        </div>
+        <div class="categories-grid">
+            <a href="products.html" class="category-card">
+                <div class="category-icon">💻</div>
+                <h3>Laptops</h3>
+                <p>28 products</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="category-icon">📱</div>
+                <h3>Phones</h3>
+                <p>42 products</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="category-icon">🎧</div>
+                <h3>Audio</h3>
+                <p>35 products</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="category-icon">🖥️</div>
+                <h3>Monitors</h3>
+                <p>19 products</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="category-icon">⌨️</div>
+                <h3>Accessories</h3>
+                <p>86 products</p>
+            </a>
+            <a href="products.html" class="category-card">
+                <div class="category-icon">📷</div>
+                <h3>Cameras</h3>
+                <p>24 products</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Featured Products ===== -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Top Picks</div>
+            <h2>Featured Products</h2>
+            <p>Hand-picked bestsellers loved by our customers</p>
+        </div>
+        <div class="products-grid" id="featured-grid"></div>
+        <div style="text-align:center; margin-top:2rem;">
+            <a href="products.html"><button class="btn-primary">View All Products →</button></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Features ===== -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Why Us</div>
+            <h2>Why Shop With Us?</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚚</div>
+                <h3>Fast Delivery</h3>
+                <p>Get your orders delivered within 2-3 business days anywhere in the country.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure Payments</h3>
+                <p>All transactions are encrypted and protected with industry-standard security.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">↩️</div>
+                <h3>Easy Returns</h3>
+                <p>Not satisfied? Return any item within 30 days for a full refund, no questions asked.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎧</div>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated support team is always ready to help you with any issue.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <div class="logo">🛒 Shop<span>Zone</span></div>
+            <p>Your trusted destination for premium electronics at competitive prices. Quality products, exceptional service.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="products.html">All Products</a>
+            <a href="products.html">Laptops</a>
+            <a href="products.html">Phones</a>
+            <a href="products.html">Accessories</a>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+        </div>
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 ShopZone. All rights reserved. | Built for Jenkins CI/CD Learning</p>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
